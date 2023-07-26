@@ -4,53 +4,92 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: white;
 }
 
-textarea {
-    resize: none;
-    max-height: 90vh;
-    width: 70vw;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
+#main-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
     padding: 20px;
+    border-radius: 10px;
+}
+
+#main-form input {
+    margin-bottom: 20px;
+    height: 4vh;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border: none;
+    width: 23vw;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     outline: none;
-    font-family: 'Arimo';
+    transition: 200ms;
 }
 
-textarea:active {
+#main-form input:focus {
+    transform: scale(1.05);
+}
+
+#password-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#password-box i {
+    position: absolute;
+    top: 34%; right: 10px; 
+    transform: translateY(-50%);
+    opacity: 70%;
+}
+
+#main-form textarea {
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 20px;
+    border-radius: 2px;
     border: none;
-}
-
-/* Estilos de la barra de desplazamiento */
-textarea::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento vertical */
-  }
-  
-  /* Estilos del pulgar de la barra de desplazamiento */
-  textarea::-webkit-scrollbar-thumb {
-    background-color: #999; /* Color del pulgar de la barra de desplazamiento */
-    border-radius: 5px; /* Borde redondeado del pulgar */
-  }
-  
-  /* Estilos del track de la barra de desplazamiento */
-  textarea::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color del track de la barra de desplazamiento */
-  }
-  
-
-#options {
-    margin-bottom: 10px;
-}
-
-.option {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-}
-
-option {
-    border: none;
+    height: 60px;
+    resize: none;
+    padding: 10px;
     outline: none;
+    width: 23vw;
+
+}
+
+
+#registrar-nota {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition: 200ms;
+    max-width: 150px;
+    height: 40px;
+    width: 120px;
+}
+
+#bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bottom a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#bottom a:hover {
+    cursor: pointer;
+}
+
+#registrar-nota:hover {
+    cursor: pointer;
+    background-color: rgb(2, 140, 233);
 }

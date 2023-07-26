@@ -49,7 +49,7 @@ const Inicio = () => {
             <a href="http://localhost:5173/cuenta">Registrar una cuenta/contraseña</a>
             <a href="#">Configuración</a>
             <div id="password-search-box">
-              <input type="text" id="password-search" placeholder="email o usuario de la cuenta"/>
+              <input type="text" id="password-search" placeholder="nombre, email o usuario de la cuenta"/>
               <i className="bi bi-search"></i>
             </div>
           </article>
