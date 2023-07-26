@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 10px;
+
+
+}
+
+h1 {
+    font-size: 2.2rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#infoygold {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#info-chenotes {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#info-chenotes a {
+    color: white;
+}
+
+#info-chenotes a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#gold {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #333;
+    height: 170px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    height: 25vh;
+}
+
+#gold p {
+    font-size: 3vh;
+}
+
+#beneficios {
+    color: white;
+    text-align: center;
+    max-width: 150px;
+    height: 50px;
+    background-color: rgb(0, 110, 183);
+    font-size: 1rem;
+    padding: 2vh;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+#beneficios:hover {
+    background-color: rgb(2, 140, 233);
+    color: white;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 450px;
+}
+
+article {
+    padding: 10px;
+}
+
+
+#options {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#options a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #555;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 200ms;
+    border: 1px solid black;
+}
+
+#options a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+#password-search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#password-search {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #555;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    transition: 200ms;
+    color: white;
+}
+
+#password-search::placeholder {
+    opacity: 100%;
+    color: white;
+}
+
+#password-search-box i {
+    position: absolute;
+    top: 42%; right: 10px; 
+    transform: translateY(-50%);
+    opacity: 70%;
+    color: white;
+}
+
+#passwords {
+    color: white;
+    height: 70%;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+}
+
+#passwords h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#recent-passwords {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    overflow: auto;
+}
+
+#recent-passwords a:first-child {
+    margin-top: 50px;
+}
+
+#recent-passwords a {
+    border-radius: 5px;
+    display: flex;
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    border: 1px solid black;
+    transition: 200ms;
+    margin-bottom: 5px;
+    margin-right: 12px;
+}
+
+#recent-passwords a:hover {
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* Estilos boton togle */
+  
+   /* Estilos del botón toggle */
+   .toggle-button {
+    right: 3vw;
+    top: 3vh;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  /* Ocultar el input original */
+  .toggle-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* El slider del botón */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  /* Estilos del slider cuando está en posición activada */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Estilos del slider cuando está en posición desactivada */
+  input:checked + .slider {
+    background-color: rgb(0, 153, 255);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* Estilos del slider cuando se le hace click */
+  .slider:before {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16),
+                0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+
+/*///////////*/
+
+/* Mobile */
+
+@media screen and (max-width: 750px) {
+    #content {
+        height: 170vh;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #left article {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    #infoygold {
+        padding: 0;padding-bottom: 10px;
+    }
+
+    #gold {
+        width: 70vw;
+    }
+
+    #right {
+        width: 70vw;
+    }
+}
