@@ -46,7 +46,7 @@ const Inicio = () => {
         </section>
         <section id="right">
           <article id="options">
-            <a href="http://localhost:5173/nota">Registrar una cuenta/contraseña</a>
+            <a href="http://localhost:5173/cuenta">Registrar una cuenta/contraseña</a>
             <a href="#">Configuración</a>
             <div id="password-search-box">
               <input type="text" id="password-search" placeholder="email o usuario de la cuenta"/>

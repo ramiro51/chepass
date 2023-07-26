@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './Router.css'
 import Inicio from './pages/Inicio'
-import Nota from './pages/Nota'
+import Contraseña from './pages/Cuenta'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     element: <h1>Configuracion</h1>
   },
   {
-    path: 'nota',
-    element: <Nota/>
+    path: 'cuenta',
+    element: <Contraseña/>
   }
 ])
 
