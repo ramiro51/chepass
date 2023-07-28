@@ -1,4 +1,9 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Cuenta from './Cuenta';
+import '../styles/lightmode/inicio.css'
+
+
 
 const Inicio = () => {
 
@@ -21,7 +26,6 @@ const Inicio = () => {
 
   return (
     <div id="content">
-      <link rel="stylesheet" href={tema}/>
       <main>
         <div id="color-mode-box">
         <label className="toggle-button">
@@ -46,7 +50,7 @@ const Inicio = () => {
         </section>
         <section id="right">
           <article id="options">
-            <a href="http://localhost:5173/cuenta">Registrar una cuenta/contraseña</a>
+            <Link to="/cuenta">Registrar una cuenta</Link>
             <a href="#">Configuración</a>
             <div id="password-search-box">
               <input type="text" id="password-search" placeholder="nombre, email o usuario de la cuenta"/>
